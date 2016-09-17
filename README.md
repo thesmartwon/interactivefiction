@@ -13,4 +13,5 @@ Team Rocket's interactive fiction about the life of Belle Boyd.
 #### Making a commit
 1. When you start working, click the sync button to pull down everyone else's latest commits.
 2. Edit the project file in Twine, or change the directory by adding a file, ect.
-3. Click the sync button to pull changes down, and then push yours back up
+3. The changes should show up in the Github App. Click the checkmark next to the files you want to change, and then click "commit to master."
+4. Click the sync button to push your changes out to Github.
