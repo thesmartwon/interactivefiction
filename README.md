@@ -4,7 +4,7 @@ Team Rocket's interactive fiction about the life of Belle Boyd.
 ## Using github
 #### Cloning this repository
 1. Download and install the [Github desktop app.](https://desktop.github.com/)
-2. [Create a Github account.](https://github.com/join)
+2. [Create a Github account.](https://github.com/join) Send me the email you used to create it so I can give you editing rights to this repo.
 3. Login to the Github app with your new username/password.
 4. Open the Git Shell by typing 'git shell' after pressing the windows key.
 5. Cd to the folder you want to copy our project into, and run `git clone https://github.com/thesmartwon/interactivefiction.git`.
