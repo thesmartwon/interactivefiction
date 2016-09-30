@@ -2,36 +2,84 @@
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
-</script><tw-passagedata pid="1" name="A Strange Morning" tags="" position="719,307">The sun shines down on a small home in Martinsburg, Virginia. The year is 1851, and you are a seven year old by the name of Isabella Maria Boyd. You think that name is a little bit too long for you, so you go by Belle Boyd instead. Though the weather is idyllic, you feel as if there is something suspicious going on. Lots of noise if coming from your house. Your cousin Nick is in there, who still needs to be taught a lesson on who is faster, smarter, and better looking. You could [[check it out-&gt;Investigate]] what&#39;s going on, or just [[ignore it.-&gt;Ignore]]</tw-passagedata>
+</script><tw-passagedata pid="1" name="A Strange Morning" tags="" position="719,307">The sun shines down on a small home in Martinsburg, Virginia. The year is 1851, and you are a seven year old by the name of Isabella Maria Boyd. You think that name is a little bit too long for you, so you go by Belle Boyd instead. Though the weather is idyllic, you feel as if there is something suspicious going on. Lots of noise if coming from your house. Your cousin Nick is in there, who still needs to be taught a lesson on who is faster, smarter, and better looking. You could [[check it out-&gt;Investigate]] what&#39;s going on, or just [[ignore it.-&gt;Ignore]]
+(set: $spyPoints to 5)</tw-passagedata>
 <tw-passagedata pid="2" name="Ignore" tags="" position="882,438">The best way to ignore everyone has always been to go to your room. You go there, and sit on your bed. The silence of the house is broken by the laughter of children outside. Maybe you should just join their game of hide and go seek? Your brother would let you [[join late, with some convincing.-&gt;Demand to Play]]</tw-passagedata>
 <tw-passagedata pid="3" name="Investigate" tags="" position="566,439">The house is silent. You creep around the house, looking to see if anything’s going on. But it’s quiet. Too quiet. You hear the faint sounds of childish laughter from outside. Peering through the window, you can see your cousins and siblings running to go hide, and your oldest brother is counting to ten. They look to be playing a game--without you! Your brother could be convinced to 
 [[let you play-&gt;Demand to Play]], or you could [[ignore them.-&gt;Ignore]]</tw-passagedata>
-<tw-passagedata pid="4" name="Demand to Play" tags="" position="730,684">You walk outside, catching your brother right before he finishes counting. “I want to play too! Can you recount? I’ll go hide!” Your brother knows how stubborn you are, and tells you to go find a good place, he’ll recount. &quot;Thanks!&quot; You 
+<tw-passagedata pid="4" name="Demand to Play" tags="" position="730,684">You walk outside, catching your brother right before he finishes counting. “I want to play too! Can you recount? I’ll go hide!” Your brother knows how stubborn you are, and tells you to go find a good place, he’ll recount. &quot;Thanks!&quot;
+
+Where do you hide?
 [[Hide in kitchen]]
 [[Hide outside]]
 [[Hide in parent&#39;s room]]</tw-passagedata>
-<tw-passagedata pid="5" name="Hide in kitchen" tags="" position="421,854">[[Hide under sink]]
-[[Pretend to be a broom]]</tw-passagedata>
-<tw-passagedata pid="6" name="Hide outside" tags="" position="731,854">[[Hide behind a bush]]
-[[Hide in a tree]]</tw-passagedata>
-<tw-passagedata pid="7" name="Hide in parent&#39;s room" tags="" position="1020,850">[[Hide under bed]]
-[[Hide in closet]]</tw-passagedata>
-<tw-passagedata pid="8" name="Hide under sink" tags="" position="325,991">[[You win!]]
-</tw-passagedata>
-<tw-passagedata pid="9" name="Pretend to be a broom" tags="" position="495,990">[[You lose]]</tw-passagedata>
-<tw-passagedata pid="10" name="Hide behind a bush" tags="" position="654,989">[[You lose]]</tw-passagedata>
-<tw-passagedata pid="11" name="Hide in a tree" tags="" position="789,988">[[You lose]]</tw-passagedata>
-<tw-passagedata pid="12" name="Hide under bed" tags="" position="959,989">[[You lose]]
-</tw-passagedata>
-<tw-passagedata pid="13" name="Hide in closet" tags="" position="1104,991">[[You win!]]
-</tw-passagedata>
-<tw-passagedata pid="14" name="You lose" tags="" position="488,1247">Double-click this passage to edit it.</tw-passagedata>
-<tw-passagedata pid="15" name="You win!" tags="" position="920,1247">+1 pt
-[[Continue-&gt;10 years go by]]</tw-passagedata>
-<tw-passagedata pid="16" name="10 years go by" tags="" position="297,1498">10 crayzee yrs...
-one eventful day some dumbass starts insulting ur mum and harassing her
-[[tell his ass to stop-&gt;Tell him to stop]]</tw-passagedata>
-<tw-passagedata pid="17" name="Tell him to stop" tags="" position="504,1498">[[Shoot him]]</tw-passagedata>
-<tw-passagedata pid="18" name="Shoot him" tags="" position="705,1500">[[Go to court]]</tw-passagedata>
-<tw-passagedata pid="19" name="Go to court" tags="" position="905,1501">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="5" name="Hide in kitchen" tags="" position="421,854">There’s a few good places to hide in the kitchen. You could [[hide under the sink-&gt;Hide under sink]], or [[pretend to be a broom.-&gt;Pretend to be a broom]]</tw-passagedata>
+<tw-passagedata pid="6" name="Hide outside" tags="" position="731,854">
+There’s a few good places to hide in the yard. The [[front bushes-&gt;Hide behind a bush]] look large enough to stand behind, or you could have enough time to climb a [[tree just around the corner-&gt;Hide in a tree]] before your brother would come close.</tw-passagedata>
+<tw-passagedata pid="7" name="Hide in parent&#39;s room" tags="" position="1020,850">Oh, Nick is afraid to even come into this room. He had been told multiple times not to, but he probably would check it out anyway. There’s a few good places to hide in your room. Should you hide in [[the closet-&gt;Hide in closet]], or [[under the bed?-&gt;Hide under bed]]</tw-passagedata>
+<tw-passagedata pid="8" name="Hide under sink" tags="" position="325,991">You climb underneath the sink, squishing in around the objects underneath. You barely fit, but you manage to succeed. It&#39;s also pretty stuffy in here...
+[[You win!]]
+(set: $winText to &quot;You hear your brother walk past, and hold your breath, but default to quiet breathing after about 30 seconds. Then, you hear the noise of him leaving the area. You’ve succeeded--you feel very successful. You wonder if you could make a career in this.&quot;)</tw-passagedata>
+<tw-passagedata pid="9" name="Pretend to be a broom" tags="" position="495,990">You raise the broom above your head victoriously, then stand in a corner with it in front of you. This is the perfect disguise. No one will suspect anything. You are a god. The lord of brooms. You are powerful. Sadly, though, [[your brother walks near...-&gt;You lose]]
+(set: $loseText to &quot;Caught up in your broom power fantasies, you jump when your brother puts his hand on your shoulder. “Found you!” He says.&quot;)</tw-passagedata>
+<tw-passagedata pid="10" name="Hide behind a bush" tags="" position="654,989">You jump in the bush, sending up a flurry of leaves. Hopefully your brother didn’t hear that. Your vision is blocked by bush leaves. So if you can&#39;t see him, [[he can&#39;t see you, right?-&gt;You lose]]
+(set: $loseText to &quot;You see your brother coming to your hiding spot. Hopefully he won’t notice you- Uh oh. You’ve made eye contact. “Found you!”&quot;)</tw-passagedata>
+<tw-passagedata pid="11" name="Hide in a tree" tags="" position="789,988">You climb the tree, moving to a sturdy branch and hiding amongst the leaves. You can see everything- hopefully, your brother won’t see you. After waiting a while, you start to get comfortable, dangling your legs and enjoying the breeze. [[Your brother comes around the corner...-&gt;You lose]]
+(set: $loseText to &quot;You see your brother coming to your hiding spot. Hopefully he won’t notice you- Uh oh. You’ve made eye contact. “Found you!”&quot;)</tw-passagedata>
+<tw-passagedata pid="12" name="Hide under bed" tags="" position="959,989">You maneuver yourself underneath the bed, hoping your brother won’t think to look on the ground. He is a clever one though. He walks in, and hold your breath. You see his shadow peering down. It&#39;s been 5 seconds, 15 seconds, 30 seconds. You can&#39;t hold any longer, [[you gasp.-&gt;You lose]]
+(set: $loseText to &quot;Your brother hears your gasp, kneels and pokes you under the bed.  “Found you!” he says.&quot;)</tw-passagedata>
+<tw-passagedata pid="13" name="Hide in closet" tags="" position="1104,991">You climb into the closet, pushing Ma&#39;s petticoats and dress in front of you. You barely fit, but you manage to succeed. Your brother [[walks in the room..-&gt;You win!]]
+(set: $winText to &quot;You hear your brother walk past, and hold your breath, but default to quiet breathing after about 30 seconds. Then, you hear the noise of him leaving the area. You’ve succeeded--you feel very successful. You wonder if you could make a career in this.&quot;)</tw-passagedata>
+<tw-passagedata pid="14" name="You lose" tags="" position="488,1247">$loseText
+
+Ugh, you thought that was such a good hiding spot too!
+You take one of pa&#39;s books off of the living room bookshelf to read until the game is over.
+Everyone slowly piled in. He found them all. To be fair, he is the best seeker, maybe even better than you.
+
+“That was a pretty good hiding spot, I guess.” Your brother is totally mocking you. You stick out your tongue at him. “Better luck next time!” He promises.
+
+Oh, you will have better luck. [[You’re going to win.-&gt;10 years go by]]
+(set: $spyPoints to $spyPoints - 1)</tw-passagedata>
+<tw-passagedata pid="15" name="You win!" tags="" position="920,1247">$winText
+
+[[Continue...-&gt;10 years go by]]
+(set: $spyPoints to $spyPoints + 1)</tw-passagedata>
+<tw-passagedata pid="16" name="10 years go by" tags="" position="297,1498">You sit on the front step of your home, looking at growing figures of soldiers in the distance. You didn’t quite like the Union soldiers, but you didn&#39;t dislike them, either. Some could be manipulated, they were just on the wrong side, that&#39;s all. 
+
+Two rode up to your house, hopping off their horses. 
+
+“You got a father we can speak to?” 
+
+You may not dislike most, but these two are obviously going to be an exception, especially when they’re so brash like that. 
+“I may. I certainly have a mother.”
+
+“Sounds like a yes. Well, a good mother certainly wouldn’t mind us hanging up this here flag on your house.”
+He brandishes a union flag threateningly. “Don’t know how good of a mother she’d be with a rude lady like you.” He looks you up and down in a way you don’t like. You’re about to tell him off, when your mother arrives on the front porch.
+
+“What’s keeping you soldiers? We’re lawful citizens, we don’t make any trouble.”
+
+“No trouble? Your little daughter here is creating some. Keep her on a tighter grip.”
+
+You open your mouth to argue, but your mother is speaking again. You let her continue, she knows that you did nothing wrong. 
+
+“Belle is much more respectful than any of you gentlemen are being now. Now, what do you want with us?” 
+
+Apparently, this insinuation is a little too much for the soldier. The man’s face turns red, and you watch with horror as he begins to insult your mother in a colorful ways you’ve only heard from rapscallions. He pushes her, and she stands there, taking it. Eventually, he remembers what he&#39;s here for and tells her he wants to hang the flag, and that the penalty for taking it down would be severe.
+
+“Go ahead,” ma said. “Hang it.” She walked away.
+
+The quieter soldier started to hang it, but the other stayed with you. He keeps talking about the superiority of the union, and it’s the calling of your mother by rude names that’s the last straw.
+
+You show him how respectful of a daughter you are. [[You’d never let someone get away with insulting your mother.-&gt;Tell him to stop]]</tw-passagedata>
+<tw-passagedata pid="17" name="Tell him to stop" tags="" position="504,1498">You can stay quiet no longer. “Stop talking about ma like that,” you say. “She let you hang your flag, so let her be.”
+
+“Oh, your mom, dearie... she deserves hell.”
+
+He can&#39;t talk like this. You must [[take a stand.-&gt;Shoot him]]</tw-passagedata>
+<tw-passagedata pid="18" name="Shoot him" tags="" position="705,1500">You pull out your pistol, and with the grace of years of practice, shoot the rude soldier in the head. 
+
+He falls over, dead. [[There will be repercussions for this, though.-&gt;Go to court]]</tw-passagedata>
+<tw-passagedata pid="19" name="Go to court" tags="" position="905,1501">The death was investigated, but apparently the man you’d shot was such a rude man, even his commanding officer disliked him. They said you were in the right, and that the soldier had overstepped his boundaries. Union soldiers were assigned to watch the house to make sure the flag was still up, but that&#39;s it.
+
+You started with 5, and now have $spyPoints spy points.</tw-passagedata>
 </tw-storydata>
