@@ -4,17 +4,21 @@
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
 
 
 
-</script><tw-passagedata pid="1" name="A Strange Morning" tags="" position="700,300">(set: $currentpassage to (passage:)&#39;s name)
+
+</script><tw-passagedata pid="1" name="A Strange Morning" tags="" position="699,301">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 The sun shines down on a small home in Martinsburg, Virginia. The year is 1851, and you are a seven year old by the name of Isabella Maria Boyd. You think that name is a little bit too long for you, so you go by Belle Boyd instead. Though the weather is idyllic, you feel as if there is something suspicious going on. Lots of noise if coming from your house. Your cousin Nick is in there, who still needs to be taught a lesson on who is faster, smarter, and better looking. You could [[check out what&#39;s going on-&gt;Investigate]], or just [[ignore it.-&gt;Ignore]]
-(set: $spyPoints to 5)</tw-passagedata>
+
+(set: $spyPoints to 1)
+[[Go Spy -&gt;LAST CHOICE OF SPYHOOD LEADS HERE]]  </tw-passagedata>
 <tw-passagedata pid="2" name="Ignore" tags="" position="900,500">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
@@ -217,4 +221,23 @@ They all laughed. You smiled, this was golden. Mr. Carlson stood up.
 You party, making new contacts, catching up on gossip, and witnessing all the events that happen. In fact, you blend in so well, many forget you are here, despite your dramatic entrance. [[All good things must come to an end, though…-&gt;Another 5 years go by]]
 </tw-passagedata>
 <tw-passagedata pid="30" name="Ask ma to join the Confederate cause" tags="" position="400,2800">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="31" name="LAST CHOICE OF SPYHOOD LEADS HERE" tags="" position="740,3034">The smoke cleared from the scene and proved Stonewall’s men victorious. The confederates had won the battle! They were able to overwhelm and surprise the Union troops and take Front Royal for the Confederacy. You later receive a letter from the General himself, thanking you for your service to the South. You decide it is time for you to retire from all this spy business.
+(if: $spyPoints &lt;= 1)[
+It has been years since the Battle of Front Royal and this war seems to be coming to a close. Your contributions have not been forgotten but your career as a spy is behind you now. Your family always wished you would find someone and settle down so you do just that. You decide to marry an englishman by the name of John Hammond, a former soldier in the Union. Despite your differences you have a happy marriage and four children to show for it.
+]
+
+(elseif: $spyPoints  &lt;= 3)[
+Despite the Confederacy’s victory at Front Royal, the tide of war seemed to be turning in favor of the North. You decide to leave America and this Civil War business behind you and travel to England. You finally arrive in 1864 and decide to marry Lieutenant Samuel Hardinge, a Union naval officer who helped you escape the United States and fled with you. With the distinct lack of people to spy on for the Confederacy in England, you decide to become an actress. You find great success on the stage telling your stories from the war.
+]
+(elseif: $spyPoints &lt;= 5)[
+Years have passed and the American Civil War is over. Although you had left the spy business you are still sad to see the Confederates lose. Maybe if you had just stayed a little longer…
+But this is all in the past. You decide to never let anyone forget about your heroic deeds for the South. After marrying an actor by the name of Nathaniel High, you tour the country telling the story of your involvement in the war and the brave things you accomplished.
+]
+
+[[Closer -&gt; Closer]]</tw-passagedata>
+<tw-passagedata pid="32" name=" Closer" tags="" position="739,3172">(set: $currentpassage to (passage:)&#39;s name)
+**$currentpassage**
+
+In reality, Maria Isabella Boyd really was an integral part of the Confederacy winning the Battle of Front Royal. She grew up in Martinsburg, Virginia and was always described as being carefree and a bit reckless. Her life as a spy began when she was 17 years old with the killing of the Union soldier as it is told in the game. This action resulted in Union officers being posted outside of her home, giving her the opportunity to gain information and help the Confederates. After gaining notoriety and more than a few prison sentences, Boyd gave Stonewall Jackson the information that allowed his troops to take back Front Royal. After her career as a spy, Belle left the country with the help of Sam Hardinge and went to England where she became a successful actress. Following her first husband’s death, she came back to America in 1866. Continuing her stage career, Boyd traveled the country telling stories of her life as a southern spy. She married John Hammond in 1869 and enjoyed sixteen years of marriage as well as had four children before divorcing him and marrying Nathaniel High two months later. Maria Isabella Boyd died on June 11, 1900 at 56 years of age. She died of a heart attack on stage in Wisconsin, speaking of her experiences in Confederate espionage.
+</tw-passagedata>
 </tw-storydata>
