@@ -2,7 +2,9 @@
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -14,11 +16,11 @@ The sun shines down on a small home in Martinsburg, Virginia. The year is 1851, 
 <tw-passagedata pid="2" name="Ignore" tags="" position="900,500">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-The best way to ignore everyone has always been to go to your room. You go there, and sit on your bed. The silence of the house is broken by the laughter of children outside. Maybe you should just join their game of hide and go seek? The oldest person, your brother Nick, would let you [[join in late (with some convincing).-&gt;Demand to Play]]</tw-passagedata>
+The best way to ignore everyone has always been to go to your room. You go there, and sit on your bed. The silence of the house is broken by the laughter of children outside. Maybe you should just join their game of hide and go seek? The oldest person, your brother Bill, would let you [[join in late (with some convincing).-&gt;Demand to Play]]</tw-passagedata>
 <tw-passagedata pid="3" name="Investigate" tags="" position="500,500">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-The house is silent. You creep around the house, looking to see if anything’s going on. But it’s quiet. Too quiet. You hear the faint sounds of childish laughter from outside. Peering through the window, you can see your cousins and siblings running to go hide, and your oldest brother, Nick, is counting to ten. They look to be playing a game--without you! Nick could be convinced to [[let you play-&gt;Demand to Play]], or you could always [[ignore them.-&gt;Ignore]]</tw-passagedata>
+The house is silent. You creep around the house, looking to see if anything’s going on. But it’s quiet. Too quiet. You hear the faint sounds of childish laughter from outside. Peering through the window, you can see your cousins and siblings running to go hide, and your oldest brother, Bill, is counting to ten. They look to be playing a game--without you! Nick could be convinced to [[let you play-&gt;Demand to Play]], or you could always [[ignore them.-&gt;Ignore]]</tw-passagedata>
 <tw-passagedata pid="4" name="Demand to Play" tags="" position="700,700">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
@@ -39,7 +41,7 @@ There’s a few good places to hide in the yard. The [[front bushes-&gt;Hide beh
 <tw-passagedata pid="7" name="Hide in parent&#39;s room" tags="" position="1100,900">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-Oh, Nick is afraid to even come into this room. He had been told multiple times not to, but he probably would check it out anyway. There’s a few good places to hide in your room. Should you hide in [[the closet-&gt;Hide in closet]], or [[under the bed?-&gt;Hide under bed]]</tw-passagedata>
+Oh, Bill is afraid to even come into this room. He had been told multiple times not to, but he probably would check it out anyway. There’s a few good places to hide in your room. Should you hide in [[the closet-&gt;Hide in closet]], or [[under the bed?-&gt;Hide under bed]]</tw-passagedata>
 <tw-passagedata pid="8" name="Hide under sink" tags="" position="200,1100">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
@@ -83,15 +85,15 @@ Everyone slowly piled in. He found them all. To be fair, he is the best seeker, 
 
 “That was a pretty good hiding spot, I guess.” Your brother is totally mocking you. You stick out your tongue at him. “Better luck next time!” He promises.
 
-Oh, you will have better luck. [[You’re going to win.-&gt;10 years go by]]</tw-passagedata>
+Oh, you will have better luck. [[You’re going to win.-&gt;5 years go by]]</tw-passagedata>
 <tw-passagedata pid="15" name="You win!" tags="" position="800,1300">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 $winText
 
-[[Continue...-&gt;10 years go by]]
+[[Continue...-&gt;5 years go by]]
 (set: $spyPoints to $spyPoints + 1)</tw-passagedata>
-<tw-passagedata pid="16" name="10 years go by" tags="" position="700,1500">(set: $currentpassage to (passage:)&#39;s name)
+<tw-passagedata pid="16" name="Another 5 years go by" tags="" position="400,2600">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 You sit on the front step of your home, looking at growing figures of soldiers in the distance. You didn’t quite like the Union soldiers, but you didn&#39;t dislike them, either. Some could be manipulated, they were just on the wrong side, that&#39;s all. 
@@ -121,7 +123,7 @@ Apparently, this insinuation is a little too much for the soldier. The man’s f
 The quieter soldier started to hang it, but the other stayed with you. He keeps talking about the superiority of the union, and it’s the calling of your mother by rude names that’s the last straw.
 
 You show him how respectful of a daughter you are. [[You’d never let someone get away with insulting your mother.-&gt;Tell him to stop]]</tw-passagedata>
-<tw-passagedata pid="17" name="Tell him to stop" tags="" position="900,1500">(set: $currentpassage to (passage:)&#39;s name)
+<tw-passagedata pid="17" name="Tell him to stop" tags="" position="600.0001,2600">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 You can stay quiet no longer. “Stop talking about ma like that,” you say. “She let you hang your flag, so let her be.”
@@ -129,16 +131,87 @@ You can stay quiet no longer. “Stop talking about ma like that,” you say. �
 “Oh, your mom, dearie... she deserves hell.”
 
 He can&#39;t talk like this. You must [[take a stand.-&gt;Shoot him]]</tw-passagedata>
-<tw-passagedata pid="18" name="Shoot him" tags="" position="1100,1500">(set: $currentpassage to (passage:)&#39;s name)
+<tw-passagedata pid="18" name="Shoot him" tags="" position="800,2600">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 You pull out your pistol, and with the grace of years of practice, shoot the rude soldier in the head. 
 
 He falls over, dead. [[There will be repercussions for this, though.-&gt;Go to court]]</tw-passagedata>
-<tw-passagedata pid="19" name="Go to court" tags="" position="1300,1500">(set: $currentpassage to (passage:)&#39;s name)
+<tw-passagedata pid="19" name="Go to court" tags="" position="1000,2600">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-His death was investigated, but apparently the man you’d shot was such a rude man, even his commanding officer disliked him. They said you were in the right, and that the soldier had overstepped his boundaries. Union soldiers were assigned to watch the house to make sure the flag was still up, but that&#39;s it.
-
-You started with 5, and now have $spyPoints spy points.</tw-passagedata>
+His death was investigated, but apparently the man you’d shot was such a rude man, even his commanding officer disliked him. They said you were in the right, and that the soldier had overstepped his boundaries. Union soldiers were assigned to watch the house to make sure the flag was still up, but that&#39;s it.</tw-passagedata>
+<tw-passagedata pid="20" name="5 years go by" tags="" position="702,1503">(set: $currentpassage to (passage:)&#39;s name)
+**$currentpassage**
+The party tomorrow was going to be the most fun party of the year. All your best friends were going, not to mention your family, who you also liked. There were going to be dinner games, extravagent food, and the best entertainment. You had to get pa to let you go tomorrow. At the dinner table, your brother Bill, sister Mary, ma and pa were all there. Bill was going for sure, how could you play this to get to go to? [[Strike up a conversation with pa]] might work, but [[talking about your close friendship with your brother-&gt;Talk to your brother]] might work as well. Ma was [[susceptible to sweet talk-&gt;Talk to ma]] as well.</tw-passagedata>
+<tw-passagedata pid="21" name="Strike up a conversation with pa" tags="" position="500.0001,1700">(set: $currentpassage to (passage:)&#39;s name)
+**$currentpassage**
+“So pa, what’s happening tomorrow?” you ask.
+“Well, I’m goin’ to my shop, it’s open like always,” he replied.
+“What about in the evening?”
+“Oh, me, ma, and Bill are going over to the Carlson’s for dinner.”
+“Can I come?”
+“You’re a little young there, missy,” he laughed.
+[[Give up-&gt;Not allowed to go???]]
+[[Give reasons to go]]</tw-passagedata>
+<tw-passagedata pid="22" name="Talk to ma" tags="" position="900.0001,1700">(set: $currentpassage to (passage:)&#39;s name)
+**$currentpassage**
+“What are you doing tomorrow evening, ma?”
+Ma quickly swallows.
+“We are going to an adult dinner party at the Carlson’s, Belle. Your father and I have already talked about it, only Bill is coming too.”
+“But maa..”
+“You can’t go Belle, that’s final.”
+“But people younger than me are going, ma. And besides, I know everyone there.”
+“No,” your father sternly says, “and that’s final.”
+Bill looks at you, a little sad. Well, pa wasn&#39;t going to change his mind. It seems like you [[are not allowed to go-&gt;Not allowed to go???]]</tw-passagedata>
+<tw-passagedata pid="23" name="Not allowed to go???" tags="" position="500.0001,1900">(set: $currentpassage to (passage:)&#39;s name)
+**$currentpassage**
+“Ugh,” you say, offended. This was not okay. You were going to be bored out of your mind tomorrow with only Mary Jane in the evening. You would also have extra responsibilities around the house, but that isn’t what bothered you. What bothered you was that everyone you knew in town from the past year, was going to that party. You had gotten to know all these people, and spent a lot of time with them, the whole year in fact. Sure, most of them were older than you, but some of them were your age. You had learned so much about them through gossiping, and you wanted to learn more about them, it was all so thrilling. How else could you help them? You had to go.
+“Okay, fine dad.”
+[[You were totally going, though.-&gt;The evening of]]</tw-passagedata>
+<tw-passagedata pid="24" name="Give reasons to go" tags="" position="300.0001,1900">(set: $currentpassage to (passage:)&#39;s name)
+**$currentpassage**
+You have to get his approval. He is your dad, but you were 12 now, and had your own horse. You had been doing errands in town for over a year now. You weren&#39;t a little kid anymore.
+“But you know I&#39;ve always been mature for my age, and besides, I know everyone there.”
+“Well that don&#39;t mean they know you.”
+“Kids even younger than me are going, dad.”
+“Cuz their parents have no place to put ‘em,” he said, “it’s an adult dinner party.”
+“Please?”
+“No.”
+Well, pa wasn&#39;t going to change his mind. It seems like you [[are not allowed to go-&gt;Not allowed to go???]]</tw-passagedata>
+<tw-passagedata pid="25" name="The evening of" tags="" position="500.00019999999995,2100">(set: $currentpassage to (passage:)&#39;s name)
+**$currentpassage**
+That party was going to be so big, there was a chance that you could stay unnoticed the entire time. You could not get the party off of your mind, the whole town was going to be talking about it for days. So much was going to happen, and you wanted to know all the juicy details. You fed Mary Belle around 5:00, putting on nice clothes after. You had earned this.
+[[Go to the party]]
+[[Stay at home]]</tw-passagedata>
+<tw-passagedata pid="26" name="Talk to your brother" tags="" position="700.0001,1700">(set: $currentpassage to (passage:)&#39;s name)
+**$currentpassage**
+“What are you doing tomorrow evening, Bill?”
+He is quiet for a second, thinking and chewing, and raises a finger once he remembers. He swallows.
+“Oh, we have something special planned,” he said jovially, eyes gleaming. “We going to the Carlson’s for dinner. Ooh, there gonna be so many pretty girls, good food, music, games, and the whole place, even the outside, is candlelit.” He paused, taking another bite. Pa looked at him, smirking.
+“Good thing it’s a Friday, I’m going to be up all night! She can come as long as she leaves early, can’t she pa?”
+“No, son, she is a little too young. We don’t want any boys looking at her yet, and besides, someone has to look after Mary Jane.”
+“Mary Jane is fine,” Bill said, “we have plenty of food, and she can fix it.”
+“She is still too young.”
+“Oh, pa, both my sisters would look after themselves.”
+“Please pa,” you say.
+“No.”
+Well, pa wasn&#39;t going to change his mind. It seems like you [[are not allowed to go-&gt;Not allowed to go???]]</tw-passagedata>
+<tw-passagedata pid="27" name="Go to the party" tags="" position="600.0001,2300">(set: $currentpassage to (passage:)&#39;s name)
+**$currentpassage**
+You ride your horse for 10 minutes, preserving your outfit. You ride up to the Carlson house, but can’t seem to find the stables. Everyone has been here a while. Maybe there will be a servant just inside the front door to show you where. You slowly [[ride in.-&gt;Ride in]]</tw-passagedata>
+<tw-passagedata pid="28" name="Stay at home" tags="" position="400.0001,2300">(set: $currentpassage to (passage:)&#39;s name)
+**$currentpassage**
+Well, Mary Jane did need to be looked after, and if ma or pa spotted you, you would get severely punished. They would take your horse and not allow any play for weeks, maybe even months. You couldn&#39;t let that happen.
+You snuck into pa&#39;s room and got the newspapers for the past few weeks. This would pass the time. [[Oh, what an uneventful night.-&gt;Another 5 years go by]]</tw-passagedata>
+<tw-passagedata pid="29" name="Ride in" tags="" position="800,2300">(set: $currentpassage to (passage:)&#39;s name)
+**$currentpassage**
+The humongous doors are closed, but bright candelights come from behind them. You knock, quietly, and a servant answers. The light blinds you for a second, and then you realize, oh, you are caught. The dinner table is just inside the front door (what type of house is this?). Worst of all, ma and pa are sitting facing the door, they see you first. All the guests gasp. Some seem aghast, some laugh, but all of them quiet down upon your entrance. Pa stands.
+“You’re too young, Belle. I told you to stay home,” he bellowed.
+The room was still dead silent. Mr. Carlson, at the head of the table, was still looking straight at you. Think fast, think fast.
+“Well, my horse is old enough, isn’t he?” you declare.
+They all laughed. You smiled, this was golden. Mr. Carlson stood up.
+“Let her stay, and show her where the stables are now that her horse got her in here,” he looked around and laughed disgustingly, wine goblet in hand. Everyone resumed talking and eating. Pa shook his head and sat down. You were in. This night was going to be great.
+You party, making new contacts, catching up on gossip, and witnessing all the events that happen. In fact, you blend in so well, many forget you are here, despite your dramatic entrance. [[All good things must come to an end, though…-&gt;Another 5 years go by]]
+</tw-passagedata>
 </tw-storydata>
