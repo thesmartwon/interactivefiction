@@ -8,7 +8,9 @@
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -21,13 +23,13 @@
 </script><tw-passagedata pid="1" name="A Strange Morning" tags="" position="699,301">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-The sun shines down on a small home in Martinsburg, Virginia. The year is 1851, and you are a seven year old by the name of Isabella Maria Boyd. You think that name is a little bit too long for you, so you go by Belle Boyd instead. Though the weather is idyllic, you feel as if there is something suspicious going on. Lots of noise if coming from your house. Your cousin Nick is in there, who still needs to be taught a lesson on who is faster, smarter, and better looking. You could [[check out what&#39;s going on-&gt;Investigate]], or just [[ignore it.-&gt;Ignore]]
+The sun shines down on a small home in Martinsburg, Virginia. The year is 1851, and you are a seven year old by the name of Isabella Maria Boyd. You think that name is a little bit too long for you, so you go by Belle instead. Though the weather is idyllic, you feel as if there is something suspicious going on. Lots of noise if coming from your house. Your cousin Nick is in there, who still needs to be taught a lesson on who is faster, smarter, and better looking. You could [[check out what&#39;s going on-&gt;Investigate]], or just [[ignore it.-&gt;Ignore]]
 
 (set: $spyPoints to 1)</tw-passagedata>
 <tw-passagedata pid="2" name="Ignore" tags="" position="900,500">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-The best way to ignore everyone has always been to go to your room. You go there, and sit on your bed. The silence of the house is broken by the laughter of children outside. Maybe you should just join their game of hide and go seek? The oldest person, your brother Bill, would let you [[join in late (with some convincing).-&gt;Demand to Play]]</tw-passagedata>
+The best way to ignore everyone has always been to go to your room. You go there and sit on your bed. The silence of the house is broken by the laughter of children outside. Maybe you should just join their game of hide and go seek? The oldest person, your brother Bill, would let you [[join in late with some convincing.-&gt;Demand to Play]]</tw-passagedata>
 <tw-passagedata pid="3" name="Investigate" tags="" position="500,500">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
@@ -48,27 +50,27 @@ There’s a few good places to hide in the kitchen. You could [[hide under the s
 <tw-passagedata pid="6" name="Hide outside" tags="" position="700,900">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-There’s a few good places to hide in the yard. The [[front bushes-&gt;Hide behind a bush]] look large enough to stand behind, or you could have enough time to climb a [[tree just around the corner-&gt;Hide in a tree]] before your brother would come close.</tw-passagedata>
+There’s a few good places to hide in the yard. The [[front bushes-&gt;Hide behind a bush]] look large enough to stand behind, or you could have enough time to climb a [[tree just around the corner-&gt;Hide in a tree]] before your brother would get close.</tw-passagedata>
 <tw-passagedata pid="7" name="Hide in parent&#39;s room" tags="" position="1100,900">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-Oh, Bill is afraid to even come into this room. He had been told multiple times not to, but he probably would check it out anyway. There’s a few good places to hide in your room. Should you hide in [[the closet-&gt;Hide in closet]], or [[under the bed?-&gt;Hide under bed]]</tw-passagedata>
+Oh, Bill is afraid to even come into this room. He had been told multiple times not to, but he probably would check it out anyway. There’s a few good places to hide in the room. Should you hide in [[the closet-&gt;Hide in closet]], or [[under the bed?-&gt;Hide under bed]]</tw-passagedata>
 <tw-passagedata pid="8" name="Hide under sink" tags="" position="200,1100">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-You climb underneath the sink, squishing in around the objects underneath. You barely fit, but you manage to succeed. It&#39;s also pretty stuffy in here...
-[[You win!]]
+You climb underneath the sink, squishing in around the objects underneath. You barely fit, but you manage to wedge yourself in just in time. [[It&#39;s getting pretty stuffy in here...-&gt;
+You win!]]
 (set: $winText to &quot;You hear your brother walk past, and hold your breath, but default to quiet breathing after about 30 seconds. Then, you hear the noise of him leaving the area. You’ve succeeded--you feel very successful. You wonder if you could make a career in this.&quot;)</tw-passagedata>
 <tw-passagedata pid="9" name="Pretend to be a broom" tags="" position="400,1100">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 You raise the broom above your head victoriously, then stand in a corner with it in front of you. This is the perfect disguise. No one will suspect anything. You are a god. The lord of brooms. You are powerful. Sadly, though, [[your brother walks near...-&gt;You lose]]
-(set: $loseText to &quot;Caught up in your broom power fantasies, you jump when your brother puts his hand on your shoulder. “Found you!” He says.&quot;)
+(set: $loseText to &quot;Caught up in your broom power fantasies, you jump when your brother puts his hand on your shoulder. “Found you!” he says.&quot;)
 (set: $spyPoints to $spyPoints - 1)</tw-passagedata>
 <tw-passagedata pid="10" name="Hide behind a bush" tags="" position="600,1100">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-You jump in the bush, sending up a flurry of leaves. Hopefully your brother didn’t hear that. Your vision is blocked by bush leaves. So if you can&#39;t see him, [[he can&#39;t see you, right?-&gt;You lose]]
+You jump behind the bush, sending up a flurry of leaves. Hopefully your brother didn’t hear that. Your vision is blocked by leaves. So if you can&#39;t see him, [[he can&#39;t see you, right?-&gt;You lose]]
 (set: $loseText to &quot;You see your brother coming to your hiding spot. Hopefully he won’t notice you- Uh oh. You’ve made eye contact. “Found you!”&quot;)</tw-passagedata>
 <tw-passagedata pid="11" name="Hide in a tree" tags="" position="800,1100">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
@@ -78,13 +80,13 @@ You climb the tree, moving to a sturdy branch and hiding amongst the leaves. You
 <tw-passagedata pid="12" name="Hide under bed" tags="" position="1000,1100">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-You maneuver yourself underneath the bed, hoping your brother won’t think to look on the ground. He is a clever one though. He walks in, and hold your breath. You see his shadow peering down. It&#39;s been 5 seconds, 15 seconds, 30 seconds. You can&#39;t hold any longer, [[you gasp.-&gt;You lose]]
+You maneuver yourself underneath the bed, hoping your brother won’t think to look on the ground. He is a clever one though. He walks in, and you hold your breath. You see his shadow peering down. It&#39;s been 5 seconds, 15 seconds, 30 seconds. You can&#39;t hold any longer, [[you gasp.-&gt;You lose]]
 (set: $loseText to &quot;Your brother hears your gasp, kneels and pokes you under the bed.  “Found you!” he says.&quot;)</tw-passagedata>
 <tw-passagedata pid="13" name="Hide in closet" tags="" position="1200,1100">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 You climb into the closet, pushing Ma&#39;s petticoats and dress in front of you. You barely fit, but you manage to succeed. Your brother [[walks in the room..-&gt;You win!]]
-(set: $winText to &quot;You hear your brother walk past, and hold your breath, but default to quiet breathing after about 30 seconds. Then, you hear the noise of him leaving the area. You’ve succeeded--you feel very successful. You wonder if you could make a career in this.&quot;)</tw-passagedata>
+(set: $winText to &quot;You hear your brother walk past and you hold your breath, but default to quiet breathing after about 30 seconds. Then, you hear the noise of him leaving the room. You’ve succeeded--you feel very successful. You wonder if you could make a career in this.&quot;)</tw-passagedata>
 <tw-passagedata pid="14" name="You lose" tags="" position="600,1300">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
@@ -92,9 +94,9 @@ $loseText
 
 Ugh, you thought that was such a good hiding spot too!
 You take one of pa&#39;s books off of the living room bookshelf to read until the game is over.
-Everyone slowly piled in. He found them all. To be fair, he is the best seeker, maybe even better than you.
+Everyone slowly piles in. He found them all. To be fair, he is the best seeker, maybe even better than you.
 
-“That was a pretty good hiding spot, I guess.” Your brother is totally mocking you. You stick out your tongue at him. “Better luck next time!” He promises.
+“That was a pretty good hiding spot, I guess.” Your brother is totally mocking you. You stick out your tongue at him. “Better luck next time!” he promises.
 
 Oh, you will have better luck. [[You’re going to win.-&gt;5 years go by]]</tw-passagedata>
 <tw-passagedata pid="15" name="You win!" tags="" position="800,1300">(set: $currentpassage to (passage:)&#39;s name)
@@ -107,15 +109,15 @@ $winText
 <tw-passagedata pid="16" name="4 years pass" tags="" position="700,2600">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-The year is 1860. The Civil War starts with the election of Abraham Lincoln, and soonafter secession of South Carolina. Your Pa is one of the first to volunteer for the South. He was offered a high position; but, like many of your Virginian gentlemen, he refused, leaving the pay and honor of an officer&#39;s commission to other less fortunate men.
+The year is 1860. The Civil War starts with the election of Abraham Lincoln, and, soon after, the secession of South Carolina. Your Pa is one of the first to volunteer for the South. He was offered a high position; but, like many other Virginian gentlemen, he refused, leaving the pay and honor of an officer&#39;s commission to other, less fortunate men.
 
-The home was desolate and lonely without him. The excitement of preparing him for war was gone, and the reaction of the feeling had set in. Ma&#39;s face began to wear an axious, careworn expression. Nights were not passed in sleep, but in thinking painfully of the loved one who was exposed to the dangers of war. Other Southern women felt similarly. Before long, inaction started to bother you. It wasn&#39;t before long that you had your [[first adventure being a Virginian Rebel.-&gt;First adventure]].</tw-passagedata>
+The home was desolate and lonely without him. The excitement of preparing him for war was gone, and the reality of the situation had set in. Ma&#39;s face began to wear an anxious, careworn expression. Nights were not passed in sleep, but in thinking painfully of the loved one who was exposed to the dangers of war. Other Southern women felt similarly. Inaction started to bother you very quickly. But it wasn&#39;t before long that you had your [[first adventure as a Virginian Rebel.-&gt;First adventure]].</tw-passagedata>
 <tw-passagedata pid="17" name="Tell him to stop" tags="" position="700,2900">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-You can stay quiet no longer. “Stop talking about ma like that,” you say. “She let you hang your flag, so let her be.”
+You can stay quiet no longer. “Stop talking about ma like that!” you shout. “She let you hang your flag, now let her be.”
 
-“Oh, your mom, dearie... she deserves hell.”
+“Oh, I don&#39;t think so, dearie. Your ma? She deserves hell.”
 
 He can&#39;t talk like this. You must [[take a stand.-&gt;Shoot him]]</tw-passagedata>
 <tw-passagedata pid="18" name="Shoot him" tags="" position="700,3050">(set: $currentpassage to (passage:)&#39;s name)
@@ -123,7 +125,7 @@ He can&#39;t talk like this. You must [[take a stand.-&gt;Shoot him]]</tw-passag
 
 You pull out your pistol, and with the grace of years of practice, shoot the rude soldier in the head. 
 
-He falls over, dead. [[There will be repercussions for this, though.-&gt;Go to court]]</tw-passagedata>
+He falls over, dead. You feel a rush of triumph but[[there will be repercussions for this.-&gt;Go to court]]</tw-passagedata>
 <tw-passagedata pid="19" name="Go to court" tags="" position="700,3200">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
@@ -131,8 +133,8 @@ His death was investigated, but apparently the man you’d shot was not very pop
 <tw-passagedata pid="20" name="5 years go by" tags="" position="702,1503">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-The year is 1856. The party tomorrow was going to be the most fun party of the year. All your best friends were going, not to mention your family, who you also liked. There were going to be dinner games, extravagent food, and the best entertainment. You had to get pa to let you go tomorrow. At the dinner table, your brother Bill, sister Mary, ma and pa were all there. Bill was going for sure, how could you play this to get to go to? [[Strike up a conversation with pa]] might work, but [[talking about your close friendship with your brother-&gt;Talk to your brother]] might work as well. Ma was [[susceptible to sweet talk-&gt;Talk to ma]] as well.</tw-passagedata>
-<tw-passagedata pid="21" name="Strike up a conversation with pa" tags="" position="500,1700">(set: $currentpassage to (passage:)&#39;s name)
+The year is 1856. The party tomorrow was going to be the most fun party of the year. All your best friends were going, not to mention your family, who you also liked. There were going to be dinner games, extravagent food, and the best entertainment. You had to get pa to let you go tomorrow. At the dinner table, your brother Bill, sister Mary, ma and pa were all sitting down. Bill was going for sure, how could you play this to get to go to? [[Striking up a conversation with pa]] might work, but [[talking about your close friendship with your brother-&gt;Talk to your brother]] might work as well. Ma was [[susceptible to sweet talk-&gt;Talk to ma]] as well.</tw-passagedata>
+<tw-passagedata pid="21" name="Striking up a conversation with pa" tags="" position="500,1700">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 “So pa, what’s happening tomorrow?” you ask.
@@ -148,7 +150,7 @@ The year is 1856. The party tomorrow was going to be the most fun party of the y
 
 “What are you doing tomorrow evening, ma?”
 Ma quickly swallows.
-“We are going to an adult dinner party at the Carlson’s, Belle. Your father and I have already talked about it, only Bill is coming too.”
+“We are going to an adult dinner party at the Carlson’s, Belle. Your father and I have already talked about it, only Bill is allowed to come too.”
 “But maa..”
 “You can’t go Belle, that’s final.”
 “But people younger than me are going, ma. And besides, I know everyone there.”
@@ -157,7 +159,7 @@ Bill looks at you, a little sad. Well, pa wasn&#39;t going to change his mind. I
 <tw-passagedata pid="23" name="Not allowed to go???" tags="" position="700,1900">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-“Ugh,” you say, offended. This was not okay. You were going to be bored out of your mind tomorrow with only Mary Jane in the evening. You would also have extra responsibilities around the house, but that isn’t what bothered you. What bothered you was that everyone you knew in town from the past year, was going to that party. You had gotten to know all these people, and spent a lot of time with them, the whole year in fact. Sure, most of them were older than you, but some of them were your age. You had learned so much about them through gossiping, and you wanted to learn more about them, it was all so thrilling. How else could you help them? You had to go.
+“Ugh,” you say, offended. This was not okay. You were going to be bored out of your mind tomorrow with only Mary Jane in the evening. You would also have extra responsibilities around the house, but that isn’t what bothered you. What bothered you was that everyone you knew in town was going to that party. You had gotten to know all these people and spent a lot of time with them, the whole year in fact. Sure, most of them were older than you, but some of them were your age. You had learned so much about them through gossiping and you wanted to learn more about them, it was all so thrilling. How else could you help them? You had to go.
 “Okay, fine dad.”
 [[You were totally going, though.-&gt;The evening of]]</tw-passagedata>
 <tw-passagedata pid="24" name="Give reasons to go" tags="" position="500,1900">(set: $currentpassage to (passage:)&#39;s name)
@@ -174,7 +176,7 @@ Well, pa wasn&#39;t going to change his mind. It seems like you [[are not allowe
 <tw-passagedata pid="25" name="The evening of" tags="" position="700,2100">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-That party was going to be so big, there was a chance that you could stay unnoticed the entire time. You could not get the party off of your mind, the whole town was going to be talking about it for days. So much was going to happen, and you wanted to know all the juicy details. You fed Mary Belle around 5:00, putting on nice clothes after. You had earned this.
+That party was going to be so big, there was a chance that you could stay unnoticed the entire time. You could not get the party off of your mind, the whole town was going to be talking about it for days. So much was going to happen, and you wanted to know all the juicy details. You fed Mary Jane around 5:00, putting on nice clothes after. You had earned this.
 [[Go to the party]]
 [[Stay at home]]</tw-passagedata>
 <tw-passagedata pid="26" name="Talk to your brother" tags="" position="700,1700">(set: $currentpassage to (passage:)&#39;s name)
@@ -182,8 +184,10 @@ That party was going to be so big, there was a chance that you could stay unnoti
 
 “What are you doing tomorrow evening, Bill?”
 He is quiet for a second, thinking and chewing, and raises a finger once he remembers. He swallows.
-“Oh, we have something special planned,” he said jovially, eyes gleaming. “We going to the Carlson’s for dinner. Ooh, there gonna be so many pretty girls, good food, music, games, and the whole place, even the outside, is candlelit.” He paused, taking another bite. Pa looked at him, smirking.
-“Good thing it’s a Friday, I’m going to be up all night! She can come as long as she leaves early, can’t she pa?”
+“Oh, we have something special planned,” he said jovially, eyes gleaming. “We&#39;re going to the Carlson’s for dinner. Ooh, there are gonna be so many pretty girls, good food, music, games, and the whole place, even the outside, is candlelit.” He paused, taking another bite. Pa looked at him, smirking.
+“Good thing it’s a Friday, I’m going to be up all night!”
+“It sure sounds like a lot of fun, Bill&quot; you say as persuasively as you can.
+“She can come as long as she leaves early, can’t she pa?”
 “No, son, she is a little too young. We don’t want any boys looking at her yet, and besides, someone has to look after Mary Jane.”
 “Mary Jane is fine,” Bill said, “we have plenty of food, and she can fix it.”
 “She is still too young.”
@@ -199,16 +203,17 @@ You ride your horse for 10 minutes, preserving your outfit. You ride up to the C
 **$currentpassage**
 
 Well, Mary Jane did need to be looked after, and if ma or pa spotted you, you would get severely punished. They would take your horse and not allow any play for weeks, maybe even months. You couldn&#39;t let that happen.
-You snuck into pa&#39;s room and got the newspapers for the past few weeks. This would pass the time. [[Oh, what an uneventful night.-&gt;4 years pass]]</tw-passagedata>
+You snuck into pa&#39;s room and got the newspapers from the past few weeks. This would have to pass the time. [[Oh, what an uneventful night.-&gt;4 years pass]]</tw-passagedata>
 <tw-passagedata pid="29" name="Ride in" tags="" position="800,2450">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-The humongous doors are closed, but bright candelights come from behind them. You knock, quietly, and a servant answers. The light blinds you for a second, and then you realize, oh, you are caught. The dinner table is just inside the front door (what type of house is this?). Worst of all, ma and pa are sitting facing the door, they see you first. All the guests gasp. Some seem aghast, some laugh, but all of them quiet down upon your entrance. Pa stands.
-“You’re too young, Belle. I told you to stay home,” he bellowed.
+The humongous doors are closed, but bright candelights come from behind them. You knock, quietly, and a servant answers. The light blinds you for a second, and then you realize, oh, you are caught. The dinner table is just inside the front door (what type of house is this?). Worst of all, ma and pa are sitting facing the door, they see you first. All the guests gasp. Some seem aghast, some laugh, but all of them quiet down when pa stands.
+“I told you to stay home. You’re too young, Belle,” he bellowed.
 The room was still dead silent. Mr. Carlson, at the head of the table, was still looking straight at you. Think fast, think fast.
 “Well, my horse is old enough, isn’t he?” you declare.
 They all laughed. You smiled, this was golden. Mr. Carlson stood up.
-“Let her stay, and show her where the stables are now that her horse got her in here,” he looked around and laughed disgustingly, wine goblet in hand. Everyone resumed talking and eating. Pa shook his head and sat down. You were in. This night was going to be great.
+“Let her stay, and show her where the stables are now that her horse got her in here,” he looked around and laughed disgustingly, wine goblet in hand. Everyone resumed talking and eating. Pa shook his head and sat down. 
+You were in. This night was going to be great.
 You party, making new contacts, catching up on gossip, and witnessing all the events that happen. In fact, you blend in so well, many forget you are here, despite your dramatic entrance. [[All good things must come to an end, though…-&gt;4 years pass]]
 </tw-passagedata>
 <tw-passagedata pid="30" name="Front Royal Confederate again" tags="" position="700,4700">(set: $currentpassage to (passage:)&#39;s name)
@@ -220,7 +225,7 @@ It has been years since the Battle of Front Royal and this war seems to be comin
 ]
 
 (elseif: $spyPoints  &lt;= 3)[
-Despite the Confederacy’s victory at Front Royal, the tide of war seemed to be turning in favor of the North. You decide to leave America and this Civil War business behind you and travel to England. You finally arrive in 1864 and decide to marry Lieutenant Samuel Hardinge, a Union naval officer who helped you escape the United States and fled with you. With the distinct lack of people to spy on for the Confederacy in England, you decide to become an actress. You find great success on the stage telling your stories from the war.
+Despite the Confederacy’s victory at Front Royal, the tide of war seemed to be turning in favor of the North. You decide to leave this Civil War business behind you and travel to England. You finally arrive in 1864 and decide to marry Lieutenant Samuel Hardinge, a Union naval officer who helped you escape the United States and fled with you. With the distinct lack of spying for you to do for the Confederacy in England, you decide to become an actress. You find great success on the stage telling your stories from the war.
 ]
 (elseif: $spyPoints &lt;= 5)[
 Years have passed and the American Civil War is over. Although you had left the spy business you are still sad to see the Confederates lose. Maybe if you had just stayed a little longer…
@@ -231,26 +236,29 @@ But this is all in the past. You decide to never let anyone forget about your he
 <tw-passagedata pid="31" name="Congratulations, you win!" tags="" position="700,4850">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-In reality, Maria Isabella Boyd really was an integral part of the Confederacy winning the Battle of Front Royal. She grew up in Martinsburg, Virginia and was always described as being carefree and a bit reckless. Her life as a spy began when she was 17 years old with the killing of the Union soldier as it is told in the game. This action resulted in Union officers being posted outside of her home, giving her the opportunity to gain information and help the Confederates. After gaining notoriety and more than a few prison sentences, Boyd gave Stonewall Jackson the information that allowed his troops to take back Front Royal. After her career as a spy, Belle left the country with the help of Sam Hardinge and went to England where she became a successful actress. Following her first husband’s death, she came back to America in 1866. Continuing her stage career, Boyd traveled the country telling stories of her life as a southern spy. She married John Hammond in 1869 and enjoyed sixteen years of marriage as well as had four children before divorcing him and marrying Nathaniel High two months later. Maria Isabella Boyd died on June 11, 1900 at 56 years of age. She died of a heart attack on stage in Wisconsin, speaking of her experiences in Confederate espionage.
+In reality, Maria Isabella Boyd really was an integral part of the Confederacy winning the Battle of Front Royal. She grew up in Martinsburg, Virginia and was always described as being carefree and a bit reckless. 
+Her life as a spy began when she was 17 years old with the killing of the Union soldier as it is told in our story. This action resulted in Union officers being posted outside of her home, giving her the opportunity to gain information and help the Confederates. After gaining notoriety, along with more than a few prison sentences, Boyd was able to give Stonewall Jackson the information that allowed his troops to take back Front Royal. After her career as a spy, Belle left the country with the help of Sam Hardinge and went to England where she became a successful actress. Following her first husband’s death in 1866 she came back to America. 
+Continuing her stage career, Boyd traveled the country telling stories of her life as a southern spy. She married John Hammond in 1869 and enjoyed sixteen years of marriage as well as had four children before divorcing him and marrying Nathaniel High two months later. 
+Maria Isabella Boyd died on June 11, 1900 at 56 years of age. She died of a heart attack on stage in Wisconsin, speaking of her experiences in Confederate espionage.
 </tw-passagedata>
 <tw-passagedata pid="32" name="First adventure" tags="" position="700,2750">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-You are sitting on the front step of your home, looking at growing figures of soldiers in the distance. You didn’t quite like the Union soldiers, but you didn&#39;t dislike them, either. Some could be manipulated, they were just on the wrong side, that&#39;s all. 
+You are sitting on the front step of your home, looking at growing figures of soldiers in the distance. You didn’t really like the Union soldiers, but you didn&#39;t dislike them either. Some could be manipulated, they were just on the wrong side, that&#39;s all. 
 
 Two rode up to your house, hopping off their horses. 
 
 “You got a father we can speak to?” 
 
-You may not dislike most, but these two are obviously going to be an exception, especially when they’re so brash like that. 
-“He&#39;s at war. I certainly have a mother.”
+You may not dislike most, but these two are obviously going to be an exception, especially when they act so brash like that. 
+“He&#39;s at war. But I certainly have a mother.”
 
 “Well, a good mother certainly wouldn’t mind us hanging up this here flag on your house.”
 He brandishes a union flag threateningly. “Don’t know how good of a mother she’d be with a rude lady like you.” He looks you up and down in a way you don’t like. You’re about to tell him off, when your mother arrives on the front porch.
 
 “What’s keeping you soldiers? We’re lawful citizens, we don’t make any trouble.”
 
-“No trouble? Your little daughter here is creating some. Keep her on a tighter grip.”
+“No trouble? Your little daughter here is creating some. Keep a tighter grip on her.”
 
 You open your mouth to argue, but your mother is speaking again. You let her continue, she knows that you did nothing wrong. 
 
@@ -260,19 +268,19 @@ Apparently, this insinuation is a little too much for the soldier. The man’s f
 
 “Go ahead,” ma said. “Hang it.” She was beyond mad.
 
-The quieter soldier started to hang it, but the other stayed with you. He keeps talking about the superiority of the union, and it’s the calling of your mother by rude names that’s the last straw.
+The quieter soldier started to hang it, but the other stayed with you. He kept talking about the superiority of the Union, but it’s the calling of your mother by rude names that’s the last straw.
 
 You show him how respectful of a daughter you are. [[You’d never let someone get away with insulting your mother.-&gt;Tell him to stop]]</tw-passagedata>
 <tw-passagedata pid="33" name="Time to leave home" tags="" position="700,3350">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-You travel to Front Royal, Virginia. As you approach the village your aunt and uncle live in, you hold your horse for a moment to admire how picturesque the village is. It is nestled in the surrounding mountains like a bird’s nest, and stream bends into a small valley beneath, giving life to the village. It was here your aunt and uncle had fled. They had resided in Washington, but their Southern sympathies were too strong and too openly expressed to allow of their remaining unmolested in the Northern capital. You settle in with them, and one day [[receive news.-&gt;The Battle of Bull Run started]]</tw-passagedata>
+You travel to Front Royal, Virginia. As you approach the township that your aunt and uncle live in, you hold your horse for a moment to admire the picturesque scenery. The town is settled in the surrounding mountains like a bird in a nest. A stream bends into the small valley bringing life and livelihood to the community. It was here that your aunt and uncle had fled. They had previously lived in Washington, but their Southern sympathies were too strong and too openly expressed to allow them to remain in the Northern capital. You settle in with them, and one day [[receive news.-&gt;The Battle of Bull Run started]]</tw-passagedata>
 <tw-passagedata pid="34" name="The Battle of Bull Run started" tags="" position="700,3500">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-Orders now came from the battlefield of Bull Run that the General in command found Front Royal a good spot for an extensive hospital, for the wounded Confederate soldiers. Every one in the village and the neighbourhood showed much enthusiasm in preparing, in the shortest possible time, supplies for our suffering heroes. you bore your part, and before long was duly installed one of the &quot;matrons.&quot;
+Orders now came from the battlefield of Bull Run that the General in command found Front Royal a good spot for an extensive hospital, for the wounded Confederate soldiers. Everyone in the neighbourhood showed much enthusiasm in preparing, in the shortest possible time, supplies for our suffering heroes. You bore your part, and before long was duly installed one of the &quot;matrons.&quot;
 
-The motto of your father&#39;s regiment is engraven on your heart, and you trust that you have always shown by your actions, starting with the defense of your mother, that you understood its significance.
+The motto of your father&#39;s regiment is engraved on your heart, and you trust that you have always shown by your actions, starting with the defense of your mother, that you understood its significance.
 
 After six or eight weeks spent in incessant nursing, you weren’t feeling so good. The other nurses insisted that you [[return home to recover your health,-&gt;Return home]] which had suffered severely.</tw-passagedata>
 <tw-passagedata pid="35" name="Return home" tags="" position="700,3650">(set: $currentpassage to (passage:)&#39;s name)
@@ -282,20 +290,20 @@ You longed to see your father, and as soon as word came to you and your mother h
 <tw-passagedata pid="36" name="Manassas" tags="" position="700,3800">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-You travelled without a hitch, and stayed at a large house in Manassas, situated in the middle of the camp with many other wives and daughters of soldiers. This is where you started your work in secret communications, first as a courier between General Beauregard, General Jackson, and their subordinates. You travelled all across the border of the Union and Confederacy. Eventually Front Royal was overtaken by the Union, and your aunt and uncle fled, but left one of their daughters and household, your grandma, and servants in Front Royal. Using forged documents and many of your spy skills, you manage to [[arrive at Front Royal.-&gt;Arrive at Front Royal]]</tw-passagedata>
+You travelled without a hitch, and stayed at a large house in Manassas, situated in the middle of the camp with many other wives and daughters of soldiers. This is where you started your work in secret communications, first as a courier between General Beauregard, General Jackson, and their subordinates. You travelled all across the border of the Union and Confederacy. Eventually, Front Royal was overtaken by the Union and your aunt and uncle fled, but left one of their daughters, their household and servants, and your grandmother in Front Royal. Using forged documents and many of your spy skills, you manage to [[arrive back in Front Royal.-&gt;Arrive at Front Royal]]</tw-passagedata>
 <tw-passagedata pid="37" name="Arrive at Front Royal" tags="" position="700,3950">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-It is quite dark as you reach the vilalge, and to your surprise, you find your family living in a little cottage in the courtyard. Their house is now a stronghold of the Union army, and General Shields lives there. After eating a hearty meal, you [[send a message to him-&gt;General Shields]], requesting the leave of the family to Richmond.</tw-passagedata>
+It is quite dark as you reach the village and, to your surprise, you find your family living in a little cottage in the courtyard. Their house is now a stronghold of the Union army, and General Shields lives there. After eating a hearty meal, you [[send a message to him-&gt;General Shields]], requesting the leave of the family to Richmond.</tw-passagedata>
 <tw-passagedata pid="38" name="General Shields" tags="" position="700,4100">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 The next morning, General Shields comes to meet with you in person. He was an Irishman, and proudly so, as he wore their better graces of manner and notorious sense of humor.
 He replies, “Oh, I could never let you go because old Jackson&#39;s army is so demoralized that they&#39;re going to be wiped out in a few days. Then, you can go where you please.”
 “Oh -- is that so?” you ask.
-“Absolutely,” he admonished. “Let me show you the men, who alongside me, will do it.”
+“Absolutely,” he admonished. “Let me show you the men who, alongside me, will do it.”
 He led you back to the house, clearly oblivious to the fact that sometimes a woman could listen and remember. Here he introduced you to two young Irishman.
-One of them was a captain named [[Mr. Kelley.-&gt;Mr. Kelley]]</tw-passagedata>
+One of them was a captain named [[Kelley.-&gt;Mr. Kelley]]</tw-passagedata>
 <tw-passagedata pid="39" name="Mr. Kelley" tags="" position="700,4250">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
@@ -303,14 +311,14 @@ You are able to extract information from. You learn of a meeting happening this 
 <tw-passagedata pid="40" name="Sneak upstairs to the bedchamber" tags="" position="700,4400">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-You lay down in the floor of the closet, and to your delight you can distinctly hear the conversation that was passing below. You remained there for hours until they came to a conclusion, a conclusion to  march south, laying a trap, as he supposed, to catch &quot;poor old Jackson and his demoralized army.&quot; However, he would only leave behind him, to occupy Front Royal, one squadron of cavalry, one field battery, and the 1st Maryland Regiment of Infantry. This was Confederacy&#39;s chance to attack. You had to tell the nearest Confederate colonel, Colonel Ashby, who was only 15 miles away.
-You run to your room and write a cipher containing all the relevant bits of information that could be used. It is 3 in the morning now. Rather than cause a stir by waking a servant and raisking getting caught, you go straight to your horse and leave for Colonel Ashby. Twice, you are stopped by sentries, but thankfully you have forged papers to get by. [[You arrive at Colonel Ashby&#39;s house.]]</tw-passagedata>
+You lay down in the floor of the closet, and to your delight you can distinctly hear the conversation that was passing below. You remained there for hours until they came to a conclusion, a conclusion to  march south, laying a trap, as he supposed, to catch &quot;poor old Jackson and his demoralized army.&quot; However, he would only leave behind him one squadron of cavalry, one field battery, and the 1st Maryland Regiment of Infantry to occupy Front Royal. This was the Confederacy&#39;s chance to attack. You had to tell the nearest Confederate colonel, Colonel Ashby, who was only 15 miles away.
+You run to your room and write a cipher containing all the relevant bits of information. It is 3 in the morning now. Rather than cause a stir by waking a servant and risking getting caught, you go straight to your horse and leave for Colonel Ashby. Twice, you are stopped by sentries, but thankfully you have forged papers to get by. [[You arrive at Colonel Ashby&#39;s house.]]</tw-passagedata>
 <tw-passagedata pid="41" name="You arrive at Colonel Ashby&#39;s house." tags="" position="700,4550">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-In the very act of dismounting a door on your right was thrown open, and revealed Colonel Ashby himself, who could not conceal his surprise at seeing you standing before him.
+In the very act of dismounting, a door on your right is thrown open, revealing Colonel Ashby himself, who could not conceal his surprise at seeing you standing before him.
 
-“Good God! Miss Belle, is this you? Where did you come from? Have you dropped from the clouds? or am I dreaming?”
+“Good God! Miss Belle, is that you? Where did you come from? Have you dropped from the clouds? Or am I dreaming?”
 
-You first convince him he is wide awake, and that your presence was substantial and of the earth - not a visionary emanation from the world of spirits - then, without farther circumlocution, I tell him all you had overheard in the closet. You gave him the cipher, and started on your return to Front Royal. Within weeks, at the planned time, [[Jackson&#39;s army came to retake Front Royal.-&gt;Front Royal Confederate again]]</tw-passagedata>
+You first convince him he is wide awake, and that your presence was substantial and of the earth - not a visionary emanation from the world of spirits - then, without further circumlocution, you tell him all you had overheard from the closet. You gave him the cipher, and started on your return to Front Royal. Within weeks, at the planned time, [[ Stonewall Jackson&#39;s army came to retake Front Royal.-&gt;Front Royal Confederate again]]</tw-passagedata>
 </tw-storydata>
