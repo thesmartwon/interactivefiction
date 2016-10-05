@@ -137,7 +137,15 @@ He falls over. You feel a rush of triumph but [[there will be repercussions for 
 
 It turns out that soldier died before medics even got to him. His death was investigated, and traced back to you. Apparently, though, the man you’d shot was not very popular, even his commanding officer disliked him. The officers profusely apologized, promising no more trouble.
 
-They said your actions were justified, and that the soldier had overstepped his boundaries. Union soldiers were assigned to watch the house to make sure that you had no other problems, but that&#39;s it. You decorated your room with Confederate flags, laughing at them through the window. You had been stirred to action, though, and the house could keep you no longer. Ma and Mary Jane would be fine, it was [[time to leave home.-&gt;Travel to Front Royal]]</tw-passagedata>
+	
+(if: $spyPoints &lt;= 0)[
+You realize that a life of spy could be a perilous, not to mention dangerous journey, and one you did not sign up for. You decide that perhaps a life of a simple housewife, like your mother, was a much better life. Did you REALLY need to pretend to be a broom?
+(set: $spyPoints to 0)
+[[Start over-&gt;A Strange Morning]]
+]
+(elseif: true)[
+They said your actions were justified, and that the soldier had overstepped his boundaries. Union soldiers were assigned to watch the house to make sure that you had no other problems, but that&#39;s it. You decorated your room with Confederate flags, laughing at them through the window. You had been stirred to action, though, and the house could keep you no longer. Ma and Mary Jane would be fine, it was [[time to leave home.-&gt;Travel to Front Royal]]
+]</tw-passagedata>
 <tw-passagedata pid="20" name="5 years go by" tags="" position="702,1503">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
@@ -224,7 +232,7 @@ They all laughed. You smiled, this was golden. Mr. Carlson stood up.
 You were in. This night was going to be great.
 You party, making new contacts, catching up on gossip, and witnessing all the events that happen. In fact, you blend in so well, many forget you are here, despite your dramatic entrance. [[All good things must come to an end, though…-&gt;4 years pass]]
 </tw-passagedata>
-<tw-passagedata pid="30" name="Front Royal Confederate again" tags="" position="700,4700">(set: $currentpassage to (passage:)&#39;s name)
+<tw-passagedata pid="30" name="Front Royal Confederate again" tags="" position="700,5250">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 The smoke cleared from the scene and proved Stonewall’s men victorious. The confederates had won the battle! They were able to overwhelm and surprise the Union troops and take Front Royal for the Confederacy. You later receive a letter from the General himself, thanking you for your service to the South. You decide it is time for you to retire from all this spy business.
@@ -241,7 +249,7 @@ But this is all in the past. You decide to never let anyone forget about your he
 ]
 
 [[Closer -&gt;Congratulations, you win!]]</tw-passagedata>
-<tw-passagedata pid="31" name="Congratulations, you win!" tags="" position="700,4850">(set: $currentpassage to (passage:)&#39;s name)
+<tw-passagedata pid="31" name="Congratulations, you win!" tags="" position="700,5400">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 In reality, Maria Isabella Boyd really was an integral part of the Confederacy winning the Battle of Front Royal. She grew up in Martinsburg, Virginia and was always described as being carefree and a bit reckless. 
@@ -290,24 +298,23 @@ You travel to see your aunt and uncle in Front Royal, Virginia. As you approach 
 <tw-passagedata pid="34" name="The Battle of Bull Run started" tags="" position="700,3500">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-Orders now came from the battlefield of Bull Run that the General in command found Front Royal a good spot for an extensive hospital, for the wounded Confederate soldiers. Everyone in the neighbourhood showed much enthusiasm in preparing, in the shortest possible time, supplies for our suffering heroes. You bore your part, and before long was duly installed one of the &quot;matrons.&quot;
+Orders now came from the battlefield of Bull Run that the General in command found Front Royal a good spot for an extensive hospital, for the wounded Confederate soldiers.
 
-The motto of your father&#39;s regiment is engraved on your heart, and you trust that you have always shown by your actions, starting with the defense of your mother, that you understood its significance.
-
-After six or eight weeks spent in incessant nursing, you weren’t feeling so good. The other nurses insisted that you [[return home to recover your health,-&gt;Return home]] which had suffered severely.</tw-passagedata>
-<tw-passagedata pid="35" name="Return home" tags="" position="700,3650">(set: $currentpassage to (passage:)&#39;s name)
+[[But it had nothing to do with you-&gt;Ignored??]]
+[[It&#39;s time to show our fighting spirit!-&gt;Preparations!]] </tw-passagedata>
+<tw-passagedata pid="35" name="Return home" tags="" position="700,3800">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 You longed to see your father, and as soon as word came to you and your mother he was at Manassas, you [[left immediately.-&gt;Manassas]]</tw-passagedata>
-<tw-passagedata pid="36" name="Manassas" tags="" position="700,3800">(set: $currentpassage to (passage:)&#39;s name)
+<tw-passagedata pid="36" name="Manassas" tags="" position="700,3950">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 You travelled without a hitch, and stayed at a large house in Manassas, situated in the middle of the camp with many other wives and daughters of soldiers. This is where you started your work in secret communications, first as a courier between General Beauregard, General Jackson, and their subordinates. You travelled all across the border of the Union and Confederacy. Eventually, Front Royal was overtaken by the Union and your aunt and uncle fled, but left one of their daughters, their household and servants, and your grandmother in Front Royal. Using forged documents and many of your spy skills, you manage to [[arrive back in Front Royal.-&gt;Arrive at Front Royal]]</tw-passagedata>
-<tw-passagedata pid="37" name="Arrive at Front Royal" tags="" position="700,3950">(set: $currentpassage to (passage:)&#39;s name)
+<tw-passagedata pid="37" name="Arrive at Front Royal" tags="" position="700,4100">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 It is quite dark as you reach the village and, to your surprise, you find your family living in a little cottage in the courtyard. Their house is now a stronghold of the Union army, and General Shields lives there. After eating a hearty meal, you [[send a message to him-&gt;General Shields]], requesting the leave of the family to Richmond.</tw-passagedata>
-<tw-passagedata pid="38" name="General Shields" tags="" position="700,4100">(set: $currentpassage to (passage:)&#39;s name)
+<tw-passagedata pid="38" name="General Shields" tags="" position="700,4250">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 The next morning, General Shields comes to meet with you in person. He was an Irishman, and proudly so, as he wore their better graces of manner and notorious sense of humor.
@@ -316,16 +323,24 @@ He replies, “Oh, I could never let you go because old Jackson&#39;s army is so
 “Absolutely,” he admonished. “Let me show you the men who, alongside me, will do it.”
 He led you back to the house, clearly oblivious to the fact that sometimes a woman could listen and remember. Here he introduced you to two young Irishman.
 One of them was a captain named [[Kelley.-&gt;Mr. Kelley]] The other was a First Lieutenant named [[Jamison.-&gt;Mr. Jamison]]</tw-passagedata>
-<tw-passagedata pid="39" name="Mr. Kelley" tags="" position="700,4250">(set: $currentpassage to (passage:)&#39;s name)
+<tw-passagedata pid="39" name="Mr. Kelley" tags="" position="700.0001,4400">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-You are able to extract a lot of information from Mr. Kelley, he almost forgets that it is wartime, not love time. You learn of a meeting happening this very night in what was formerly your aunt’s drawing room. Immediately above this was a bedchamber, containing a closet, through the floor of which you remembered there was a hole. As soon as the council of war assembled at the correct time, you [[sneak upstairs to the bedchamber.-&gt;Sneak upstairs to the bedchamber]]</tw-passagedata>
-<tw-passagedata pid="40" name="Sneak upstairs to the bedchamber" tags="" position="700,4400">(set: $currentpassage to (passage:)&#39;s name)
+You are able to extract a lot of information from Mr. Kelley, he almost forgets that it is wartime, not love time. You learn of a meeting happening this very night in what was formerly your aunt’s drawing room. Immediately above this was a bedchamber, containing a closet, through the floor of which you remembered there was a hole. You didn&#39;t know whether or not it was good for eavesdropping, though. As soon as the council of war assembled at the correct time, you can [[sneak upstairs to the bedchamber-&gt;Sneak upstairs to the bedchamber]] or [[hide behind a shelf in the drawing room.-&gt;Hide in the drawing room]]</tw-passagedata>
+<tw-passagedata pid="40" name="Sneak upstairs to the bedchamber" tags="" position="600.0001,4550">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
-You lay down in the floor of the closet, and to your delight you can distinctly hear the conversation that was passing below. You remained there for hours until they came to a conclusion, a conclusion to  march south, laying a trap, as he supposed, to catch &quot;poor old Jackson and his demoralized army.&quot; However, he would only leave behind him one squadron of cavalry, one field battery, and the 1st Maryland Regiment of Infantry to occupy Front Royal. This was the Confederacy&#39;s chance to attack. You had to tell the nearest Confederate colonel, Colonel Ashby, who was only 15 miles away.
-You run to your room and write a cipher containing all the relevant bits of information. It is 3 in the morning now. Rather than cause a stir by waking a servant and risking getting caught, you go straight to your horse and leave for Colonel Ashby. Twice, you are stopped by sentries, but thankfully you have forged papers to get by. [[You arrive at Colonel Ashby&#39;s house.]]</tw-passagedata>
-<tw-passagedata pid="41" name="You arrive at Colonel Ashby&#39;s house." tags="" position="700,4550">(set: $currentpassage to (passage:)&#39;s name)
+(set: $spyPoints to $spyPoints + 1)
+It&#39;ll be a problem if you can&#39;t hear them, but it&#39;ll be even worse if you get caught. After weighing your options, you decide to sneak upstairs to the bedchamber and listen in through the closet, hoping that the hole would be large enough to hear through.
+
+You lay down in the floor of the closet, and to your delight you can distinctly hear the conversation that was passing below. You remained there for hours until they came to a conclusion, to  march south, laying a trap, as he supposed, to catch &quot;poor old Jackson and his demoralized army.&quot; However, he would only leave behind one squadron of cavalry, one field battery, and the 1st Maryland Regiment of Infantry to occupy Front Royal. This was Confederacy&#39;s chance to attack.
+
+The journey to relay the information could be a dangerous one, while this could be pertinent information, it may not make any difference at all.
+
+[[Ignore the Information-&gt;Ignored?]]
+[[Relay the information-&gt;Important information]]
+</tw-passagedata>
+<tw-passagedata pid="41" name="You arrive at Colonel Ashby&#39;s house." tags="" position="700,4900">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 In the very act of dismounting, a door on your right is thrown open, revealing Colonel Ashby himself, who could not conceal his surprise at seeing you standing before him.
@@ -333,11 +348,49 @@ In the very act of dismounting, a door on your right is thrown open, revealing C
 “Good God! Miss Belle, is that you? Where did you come from? Have you dropped from the clouds? Or am I dreaming?”
 
 You first convince him he is wide awake, and that your presence was substantial and of the earth - not a visionary emanation from the world of spirits - then, without further circumlocution, you tell him all you had overheard from the closet. You gave him the cipher, and started on your return to Front Royal. Within weeks, at the planned time, [[ Stonewall Jackson&#39;s army came to retake Front Royal.-&gt;Front Royal Confederate again]]</tw-passagedata>
-<tw-passagedata pid="42" name="Mr. Jamison" tags="" position="550.0001,4250">Mr. Jamison was also an Irishman, but the qualities he possessed were not quite like those of General Shields. He had picked up the lesser qualities of the Irish, already slightly intoxicated on the job. After General Shields leaves, you talk to Mr. Jamison, but Mr. Kelley sticks around. Both of them inquire about your business, and what brings you to Front Royal.
+<tw-passagedata pid="42" name="Mr. Jamison" tags="" position="550.0001,4400">(set: $currentpassage to (passage:)&#39;s name)
+**$currentpassage**
+
+Mr. Jamison was also an Irishman, but the qualities he possessed were not quite like those of General Shields. He had picked up the lesser qualities of the Irish, already slightly intoxicated on the job. After General Shields leaves, you talk to Mr. Jamison, but Mr. Kelley sticks around. Both of them inquire about your business, and what brings you to Front Royal.
 You tell them about your family here, and desire to bring them to Martinsburg.
 Mr. Kelley seems far more interested in you, and far more vunerable. It&#39;s definitely in your best interest to [[focus on him.-&gt;Mr. Kelley]]</tw-passagedata>
 <tw-passagedata pid="43" name="Let him get away with it" tags="" position="500.0001,2900">(set: $currentpassage to (passage:)&#39;s name)
 **$currentpassage**
 
 You immediately regret your decision, this man continues to unrelentlessly insult your mother. He spouts slurs you didn&#39;t even know of, for no apparent reason. Your father was not even here to defend her. You can&#39;t contain yourself, you [[yell at him to stop.-&gt;Tell him to stop]]</tw-passagedata>
+<tw-passagedata pid="44" name="Ignored??" tags="" position="500.0001,3550">(set: $currentpassage to (passage:)&#39;s name)
+**$currentpassage**
+
+(set: $spyPoints to $spyPoints - 1)
+You go about your day as normal, minding your own business. You may or may not have missed out on some passing conversations of some union members that could be useful for upcoming battles, but you&#39;re trying to stay in line this time, it&#39;s not worth getting arrested yet again. 
+Or so you thought, before soon, the enthusiasm of the battle overtook you and the town.
+[[It&#39;s time to show our fighting spirit!-&gt;Preparations!]] </tw-passagedata>
+<tw-passagedata pid="45" name="Preparations!" tags="" position="700.0002,3650">(set: $currentpassage to (passage:)&#39;s name)
+**$currentpassage**
+
+Everyone in the neighbourhood showed much enthusiasm in preparing, in the shortest possible time, supplies for our suffering heroes. You bore your part, and before long was duly installed one of the &quot;matrons.&quot;
+
+The motto of your father&#39;s regiment is engraved on your heart, and you trust that you have always shown by your actions, starting with the defense of your mother, that you understood its significance.
+
+After six or eight weeks spent in incessant nursing, you weren’t feeling so good. The other nurses insisted that you [[return home to recover your health,-&gt;Return home]] which had suffered severely.</tw-passagedata>
+<tw-passagedata pid="46" name="Hide in the drawing room" tags="" position="800.0001,4550">With much difficulty, you managed to squeeze yourself and the enormous dress you&#39;re wearing behind the couch, it is hot, stuffy, and you&#39;re not even sure you hid yourself completely, but it&#39;ll have to do.
+
+You remained there for hours until they came to a conclusion, to  march south, laying a trap, as he supposed, to catch &quot;poor old Jackson and his demoralized army.&quot; However, he would only leave behind one squadron of cavalry, one field battery, and the 1st Maryland Regiment of Infantry to occupy Front Royal. This was Confederacy&#39;s chance to attack.
+
+The journey to relay the information could be a dangerous one, while this could be pertinent information, it may not make any difference at all.
+
+[[Ignore the Information-&gt;Ignored?]]
+[[Relay the information-&gt;Important information]]</tw-passagedata>
+<tw-passagedata pid="47" name="Ignored?" tags="" position="500,4750">
+(set: $spyPoints to $spyPoints - 1)
+
+As a spy, it would be extremely ill-advised to not relay possibly important information, especially one that could mean the difference between the winning or losing a battle, and by extension, the war.
+
+[[Your pride as a spy does not allow you to simply ignore this. -&gt;Important information]]</tw-passagedata>
+<tw-passagedata pid="48" name="Important information" tags="" position="700.0001,4750">(set: $currentpassage to (passage:)&#39;s name)
+**$currentpassage**
+
+You had to tell the nearest Confederate colonel, Colonel Ashby, who was only 15 miles away.
+
+You run to your room and write a cipher containing all the relevant bits of information. It is 3 in the morning now. Rather than cause a stir by waking a servant and risking getting caught, you go straight to your horse and leave for Colonel Ashby. Twice, you are stopped by sentries, but thankfully you have forged papers to get by. [[You arrive at Colonel Ashby&#39;s house.]]</tw-passagedata>
 </tw-storydata>
